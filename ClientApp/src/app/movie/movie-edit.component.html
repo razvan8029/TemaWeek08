@@ -1,0 +1,20 @@
+<h1 id="tableLabel">Update Movie</h1>
+<table class="example-full-width" cellspacing="0">
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Movies name</mat-label>
+        <input matInput [(ngModel)]="movie.name" />
+      </mat-form-field>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <mat-form-field class="example-full-width">
+        <mat-label>Genre</mat-label>
+        <input matInput [(ngModel)]="movie.genre" />
+      </mat-form-field>
+    </td>
+  </tr>
+</table>
+<button class="btn btn-primary" (click)="editMovie()">Save Movie</button>
